@@ -1,120 +1,621 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu de etiquetas 📖 Manual HTML 2024 📖</title>
+    <link rel="shortcut icon" href="img/icons/icoUptc.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div>
-                <div>
-                    <button>
-                        <!--Acá irá un botón del menú-->
-                    </button>
-                    <a href="/index.html"><img src="img/imagenes/Logo_UPTC.png" alt="Logo_UPTC"></a>
-                </div>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li>
-                        <a href="tags.html">Etiquetas</a>
-                        <div>
-                            <a href="tags.html#a">a</a>
-                            <a href="tags.html#b">b</a>
-                            <a href="tags.html#c">c</a>
-                            <a href="tags.html#d">d</a>
-                            <a href="tags.html#e">e</a>
-                            <a href="tags.html#f">f</a>
-                            <a href="tags.html#g">g</a>
-                            <a href="tags.html#h">h</a>
-                            <a href="tags.html#i">i</a>
-                            <a href="tags.html#j">j</a>
-                            <a href="tags.html#k">k</a>
-                            <a href="tags.html#l">l</a>
-                            <a href="tags.html#m">m</a>
-                            <a href="tags.html#n">n</a>
-                            <a href="tags.html#o">o</a>
-                            <a href="tags.html#p">p</a>
-                            <a href="tags.html#q">q</a>
-                            <a href="tags.html#r">r</a>
-                            <a href="tags.html#s">s</a>
-                            <a href="tags.html#t">t</a>
-                            <a href="tags.html#u">u</a>
-                            <a href="tags.html#v">v</a>
-                            <a href="tags.html#w">w</a>
-                            <a href="tags.html#x">x</a>
-                            <a href="tags.html#y">y</a>
-                            <a href="tags.html#z">z</a>
-                        </div>
-                    </li>
-                    <li><a href="contact.html">Contáctenos</a></li>
-                    <li><a href="about.html">A cerca de</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="caja-enzabezado">
+            <a href="/index.html"><img class="logo" src="img/images/Logo_UPTC.png" alt="Logo_UPTC"></a>
+            <nav>
+              <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="tags.html">Etiquetas</a>
+                    <div class="dropdown-content dropdown-content-1">
+                        <a href="tags.html#a">a</a>
+                        <a href="tags.html#b">b</a>
+                        <a href="tags.html#c">c</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contáctenos</a></li>
+                <li class="dropdown">
+                    <a>Actividades</a>
+                    <div class="dropdown-content dropdown-content-2">
+                        <a href="buton.html">Botón</a>
+                        <a href="list.html">Lista</a>
+                        <a href="image.html">Imagen</a>
+                        <a href="pdfone.html">Certificado 1</a>
+                        <a href="pdftwo.html">Certificado 2</a>
+                    </div>
+                </li>
+            </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section id="a">
+        <section class="container" id="a">
             <h2>A</h2>
-            <div>
-                <h3>&lt;a&gt; - Etiqueta de hipervínculo.</h3>
-                <p><b>Descripción:</b> Crea un enlace a otra página web o recurso.</p>
-                <h4>Atributos:</h4>
-                <ul>
-                    <li><b>href:</b> URL del destino del enlace.</li>
-                    <li><b>target:</b> Indica dónde se abrirá el enlace (_blank, _self, etc.).</li>
-                    <li><b>title:</b> Texto informativo que aparece al pasar el cursor sobre el enlace.</li>
-                    <li><b>rel:</b> Define la relación entre la página actual y la de destino.</li>
-                </ul>
-                <h4>Ejemplo:</h4>
-                <pre>
-                    <code>
-                      &lt;a href="https://www.google.com"&gt;Ir a Google&lt;/a&gt;
-                    </code>
-                </pre>
-            </div>
-            <hr>
-            <div>
-                <h3>&lt;abbr&gt; - Etiqueta de abreviatura.</h3>
-                <p><b>Descripción:</b> Define una abreviatura y su significado completo.</p>
-                <h4>Atributos:</h4>
-                <ul>
-                    <li><b>title:</b> Texto completo de la abreviatura.</li>
-                </ul>
-                <h4>Ejemplo:</h4>
-                <pre>
-                    <code>
-                      &lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;
-                    </code>
-                </pre>
-            </div>
-            <hr>
-            <div>
-                <h3>&lt;address&gt; - Etiqueta de información de contacto.</h3>
-                <p><b>Descripción:</b> Define la información de contacto del autor o propietario de la página.</p>
-                <h4>Atributos:</h4>
-                <ul>
-                    <li>No tiene atributos específicos.</li>
-                </ul>
-                <h4>Ejemplo:</h4>
-                <pre>
-                    <code>
-                      &lt;address&gt;
-                        C/ Mayor, 123&lt;br&gt;
-                        Madrid, España&lt;br&gt;
-                        email@ejemplo.com
-                      &lt;address&gt;
-                    </code>
-                </pre>
-            </div>
+            <div class="row">
+            <h3>&lt;a&gt; - Etiqueta de hipervínculo.</h3>
+            <p><strong>Descripción:</strong> Crea un enlace a otra página web o recurso.</p>
+            <h4>Atributos:</h4>
+            <ul>
+              <li><strong>href:</strong> URL del destino del enlace.</li>
+              <li><strong>target:</strong> Indica dónde se abrirá el enlace (_blank, _self, etc.).</li>
+              <li><strong>title:</strong> Texto informativo que aparece al pasar el cursor sobre el enlace.</li>
+              <li><strong>rel:</strong> Define la relación entre la página actual y la de destino.</li>
+            </ul>
+            <h4>Ejemplo:</h4>
+            <pre>
+              <code class="code-container">
+               <span class="code-tag">
+                 &lt;
+                 <span class="code-name">a</span>
+                 <span class="code-attr">href</span>
+                 =
+                 <span class="code-string" >"https://www.google.com"</span>
+                 &gt;Ir a Google
+               </span>
+               <span class="code-tag">
+                 &lt;/
+                 <span class="code-name">a</span>
+                 &gt;
+               </span>
+              </code>
+            </pre>
+          </div>
+          <hr/>
+          <div class="row">
+            <h3>&lt;abbr&gt; - Etiqueta de abreviatura.</h3>
+            <p><strong>Descripción:</strong> Define una abreviatura y su significado completo.</p>
+            <h4>Atributos:</h4>
+            <ul>
+              <li><strong>title:</strong> Texto completo de la abreviatura</li>
+            </ul>
+            <h4>Ejemplo:</h4>
+            <pre>
+              <code class="code-container">
+               <span class="code-tag">
+                 &lt;
+                 <span class="code-name">abbr</span>
+                 <span class="code-attr">title</span>
+                 =
+                 <span class="code-string" >"HyperText Markup Language"</span>
+                 &gt;HTML
+               </span>
+               <span class="code-tag">
+                 &lt;/
+                 <span class="code-name">abbr</span>
+                 &gt;
+               </span>
+              </code>
+            </pre>
+          </div>
+          <hr/>
+          <div class="row">
+            <h3>&lt;address&gt; - Etiqueta de información de contacto.</h3>
+            <p><strong>Descripción:</strong> Define la información de contacto del autor o propietario de la página.</p>
+            <h4>Atributos:</h4>
+            <ul>
+              <li>No tiene atributos específicos.</li>
+            </ul>
+            <h4>Ejemplo:</h4>
+            <pre>
+              <code class="code-container">
+               <span class="code-tag">
+                 &lt;
+                 <span class="code-name">address</span>
+                 &gt; <br> C/ Mayor, 123
+               </span>
+               <span class="code-tag">
+                &lt;
+                <span class="code-name">br</span>
+                &gt; <br> Madrid, España
+              </span>
+              <span class="code-tag">
+                &lt;
+                <span class="code-name">br</span>
+                &gt; <br> email@ejemplo.com
+              </span>
+              <br>
+               <span class="code-tag">
+                 &lt;/
+                 <span class="code-name">address</span>
+                 &gt;
+               </span>
+              </code>
+            </pre>
+          </div>
+          <hr/>
+          <div class="row">
+            <h3>&lt;area&gt; - Etiqueta de área dentro de una imagen.</h3>
+            <p><strong>Descripción:</strong> Define un área clickable dentro de una imagen, generalmente para crear un mapa de imagen.</p>
+            <h4>Atributos:</h4>
+            <ul>
+              <li><strong>href:</strong> URL del destino del enlace al hacer clic en el área.</li>
+              <li><strong>shape:</strong> Forma del área (rect, circle, etc.).</li>
+              <li><strong>coords:</strong> Coordenadas de la forma.</li>
+              <li><strong>alt:</strong> Texto alternativo para el área.</li>
+            </ul>
+            <h4>Ejemplo:</h4>
+            <pre>
+              <code class="code-container">
+               <span class="code-tag">
+                 &lt;
+                 <span class="code-name">img</span>
+                 <span class="code-attr">src</span>
+                 =
+                 <span class="code-string" >"imagen.jpg"</span>
+                 <span class="code-attr">usemap</span>
+                 =
+                 <span class="code-string" >"#mapa"</span>
+                 &gt;
+               </span>
+               <br>
+               <span class="code-tag">
+                &lt;
+                <span class="code-name">map</span>
+                <span class="code-attr">name</span>
+                =
+                <span class="code-string" >"mapa"</span>
+                &gt;
+              </span>
+              <br>
+              <span class="code-tag">
+                &lt;
+                <span class="code-name">area</span>
+                <span class="code-attr">shape</span>
+                =
+                <span class="code-string" >"rect"</span>
+                <span class="code-attr">coords</span>
+                =
+                <span class="code-string" >"0,0,100,100"</span>
+                <span class="code-attr">href</span>
+                =
+                <span class="code-string" >"https://www.ejemplo.com"</span>
+                &gt;
+              </span>
+              <br>
+               <span class="code-tag">
+                 &lt;/
+                 <span class="code-name">map</span>
+                 &gt;
+               </span>
+              </code>
+            </pre>
+          </div>
+          <hr/>
         </section>
-    </main>
+        <section class="container" id="b">
+          <h2>B</h2>
+          <div class="row">
+          <h3>&lt;b&gt; - Etiqueta de negrita.</h3>
+          <p><strong>Descripción:</strong> Pone el texto en negrita.</p>
+          <h4>Atributos:</h4>
+          <ul>
+            <li>No tiene atributos específicos.</li>
+          </ul>
+          <h4>Ejemplo:</h4>
+          <pre>
+            <code class="code-container">
+             <span class="code-tag">
+               &lt;
+               <span class="code-name">b</span>
+               &gt; Este texto es importante
+             </span>
+             <span class="code-tag">
+               &lt;/
+               <span class="code-name">b</span>
+               &gt;
+             </span>
+            </code>
+          </pre>
+        </div>
+        <hr/>
+        <div class="row">
+          <h3>&lt;base&gt; - Etiqueta de base URL.</h3>
+          <p><strong>Descripción:</strong> Define la URL base para los enlaces relativos en la página.</p>
+          <h4>Atributos:</h4>
+          <ul>
+            <li><strong>href:</strong> URL base.</li>
+          </ul>
+          <h4>Ejemplo:</h4>
+          <pre>
+            <code class="code-container">
+             <span class="code-tag">
+               &lt;
+               <span class="code-name">base</span>
+               <span class="code-attr">href</span>
+               =
+               <span class="code-string" >"https://www.ejemplo.com"</span>
+               &gt;
+             </span>
+             <br>
+             <span class="code-tag">
+              &lt;
+              <span class="code-name">a</span>
+              <span class="code-attr">href</span>
+              =
+              <span class="code-string" >"pagina.html"</span>
+              &gt; Ir a pagina.html
+            </span>
+             <span class="code-tag">
+               &lt;/
+               <span class="code-name">a</span>
+               &gt;
+             </span>
+            </code>
+          </pre>
+        </div>
+        <hr/>
+        <div class="row">
+          <h3>&lt;blockquote&gt; - Etiqueta de cita.</h3>
+          <p><strong>Descripción:</strong> Define una cita de otra fuente.</p>
+          <h4>Atributos:</h4>
+          <ul>
+            <li><strong>cite:</strong> URL de la fuente de la cita.</li>
+          </ul>
+          <h4>Ejemplo:</h4>
+          <pre>
+            <code class="code-container">
+             <span class="code-tag">
+               &lt;
+               <span class="code-name">blockquote</span>
+               &gt; 
+             </span>
+             <br>
+             <span class="code-tag">
+              &lt;
+              <span class="code-name">p</span>
+              &gt; La vida es lo que te sucede mientras estás ocupado haciendo otros planes.
+            </span>
+            <span class="code-tag">
+              &lt;/
+              <span class="code-name">p</span>
+              &gt;
+            </span>
+            <br>
+            <span class="code-tag">
+              &lt;
+              <span class="code-name">cite</span>
+              &gt; John Lennon
+            </span>
+            <span class="code-tag">
+              &lt;/
+              <span class="code-name">cite</span>
+              &gt;
+            </span>
+            <br>
+             <span class="code-tag">
+               &lt;/
+               <span class="code-name">blockquote</span>
+               &gt;
+             </span>
+            </code>
+          </pre>
+        </div>
+        <hr/>
+        <div class="row">
+          <h3>&lt;body&gt; - Etiqueta del cuerpo de la página.</h3>
+          <p><strong>Descripción:</strong> Contiene el contenido principal de la página web.</p>
+          <h4>Atributos:</h4>
+          <ul>
+            <li>No tiene atributos específicos.</li>
+          </ul>
+          <h4>Ejemplo:</h4>
+          <pre>
+            <code class="code-container">
+             <span class="code-tag">
+               &lt;
+               <span class="code-name">body</span>
+               &gt;
+             </span>
+             <br>
+             <span class="code-tag">
+              &lt;
+              <span class="code-name">h1</span>
+              &gt; Título de la página
+            </span>
+            <span class="code-tag">
+              &lt;/
+              <span class="code-name">h1</span>
+              &gt;
+            </span>
+            <br>
+            <span class="code-tag">
+              &lt;
+              <span class="code-name">p</span>
+              &gt; Contenido de la página
+            </span>
+            <span class="code-tag">
+              &lt;/
+              <span class="code-name">p</span>
+              &gt;
+            </span>
+            <br>
+             <span class="code-tag">
+               &lt;/
+               <span class="code-name">body</span>
+               &gt;
+             </span>
+            </code>
+          </pre>
+        </div>
+        <hr/>
+      </section>
+      <section class="container" id="c">
+        <h2>C</h2>
+        <div class="row">
+        <h3>&lt;caption&gt; - Etiqueta de leyenda para una tabla.</h3>
+        <p><strong>Descripción:</strong> Define una leyenda para una tabla.</p>
+        <h4>Atributos:</h4>
+        <ul>
+          <li>No tiene atributos específicos.</li>
+        </ul>
+        <h4>Ejemplo:</h4>
+        <pre>
+          <code class="code-container">
+            <span class="code-tag">
+              &lt;
+              <span class="code-name">table</span>
+              &gt;
+            </span>
+            <br>
+            <span class="code-tag">
+              &lt;
+              <span class="code-name">caption</span>
+              &gt; Tabla de datos
+            </span>
+            <span class="code-tag">
+              &lt;/
+              <span class="code-name">caption</span>
+              &gt;
+            </span>
+            <br>
+            <span class="code-tag">
+              &lt;
+              <span class="code-name">tr</span>
+              &gt;
+            </span>
+            <br>
+            <span class="code-tag">
+              &lt;
+              <span class="code-name">th</span>
+              &gt; Nombre
+            </span>
+            <span class="code-tag">
+              &lt;/
+              <span class="code-name">th</span>
+              &gt;
+            </span>
+            <br>
+            <span class="code-tag">
+              &lt;
+              <span class="code-name">th</span>
+              &gt; Edad
+            </span>
+            <span class="code-tag">
+              &lt;/
+              <span class="code-name">th</span>
+              &gt;
+            </span>
+            <br>
+            <span class="code-tag">
+              &lt;/
+              <span class="code-name">tr</span>
+              &gt;
+            </span>
+            <br>
+            <span class="code-tag">
+              &lt;
+              <span class="code-name">tr</span>
+              &gt;
+            </span>
+            <br>
+            <span class="code-tag">
+              &lt;
+              <span class="code-name">td</span>
+              &gt; Juan
+            </span>
+            <span class="code-tag">
+              &lt;/
+              <span class="code-name">td</span>
+              &gt;
+            </span>
+            <br>
+            <span class="code-tag">
+              &lt;
+              <span class="code-name">td</span>
+              &gt; 25
+            </span>
+            <span class="code-tag">
+              &lt;/
+              <span class="code-name">td</span>
+              &gt;
+            </span>
+            <br>
+            <span class="code-tag">
+              &lt;/
+              <span class="code-name">tr</span>
+              &gt;
+            </span>
+            <br>
+           <span class="code-tag">
+             &lt;/
+             <span class="code-name">table</span>
+             &gt;
+           </span>
+          </code>
+        </pre>
+      </div>
+      <hr/>
+      <div class="row">
+        <h3>&lt;center&gt; - Etiqueta de centrado.</h3>
+        <p><strong>Descripción:</strong> Centra el contenido dentro de la etiqueta.</p>
+        <h4>Atributos:</h4>
+        <ul>
+          <li>No tiene atributos específicos.</li>
+        </ul>
+        <h4>Ejemplo:</h4>
+        <pre>
+          <code class="code-container">
+            <span class="code-tag">
+              &lt;
+              <span class="code-name">center</span>
+              &gt;
+            </span>
+            <br>
+            <span class="code-tag">
+              &lt;
+              <span class="code-name">h1</span>
+              &gt; Título centrado
+            </span>
+            <span class="code-tag">
+              &lt;/
+              <span class="code-name">h1</span>
+              &gt;
+            </span>
+            <br>
+            <span class="code-tag">
+              &lt;/
+              <span class="code-name">center</span>
+              &gt;
+            </span>
+          </code>
+        </pre>
+      </div>
+      <hr/>
+      <div class="row">
+        <h3>&lt;cite&gt; - Etiqueta de cita.</h3>
+        <p><strong>Descripción:</strong> Define una cita de una fuente.</p>
+        <h4>Atributos:</h4>
+        <ul>
+          <li>No tiene atributos específicos.</li>
+        </ul>
+        <h4>Ejemplo:</h4>
+        <pre>
+          <code class="code-container">
+            <span class="code-tag">
+              &lt;
+              <span class="code-name">p</span>
+              &gt;
+            </span>
+            <span class="code-tag">
+              &lt;
+              <span class="code-name">cite</span>
+              &gt; La Osidea
+            </span>
+            <span class="code-tag">
+              &lt;/
+              <span class="code-name">cite</span>
+              &gt; es una epopeya griega clásica, atribuida a Homero.
+            </span>
+            <span class="code-tag">
+              &lt;/
+              <span class="code-name">p</span>
+              &gt;
+            </span>
+          </code>
+        </pre>
+      </div>
+      <hr/>
+      <div class="row">
+        <h3>&lt;code&gt; - Etiqueta de código.</h3>
+        <p><strong>Descripción:</strong> Muestra el texto como código fuente.</p>
+        <h4>Atributos:</h4>
+        <ul>
+          <li>No tiene atributos específicos.</li>
+        </ul>
+        <h4>Ejemplo:</h4>
+        <pre>
+          <code class="code-container">
+            <span class="code-tag">
+              &lt;
+              <span class="code-name">p</span>
+              &gt; El código HTML para una imagen es: 
+            </span>
+            <span class="code-tag">
+              &lt;
+              <span class="code-name">code</span>
+              &gt;
+            </span>
+            <span class="code-attr">&amp;lt;</span>
+            <span class="code-tag">img src="imagen.jpg"</span>
+            <span class="code-attr">&amp;gt;</span>
+            <span class="code-tag">
+              &lt;/
+              <span class="code-name">code</span>
+              &gt;
+            </span>
+            <span class="code-tag">
+              &lt;/
+              <span class="code-name">p</span>
+              &gt;
+            </span>
+          </code>
+        </pre>
+      </div>
+      <hr/>
+      <div class="row">
+        <h3>&lt;col&gt; - Etiqueta de columna en una tabla.</h3>
+        <p><strong>Descripción:</strong> Define una columna en una tabla.</p>
+        <h4>Atributos:</h4>
+        <ul>
+          <li><strong>span:</strong> Número de columnas que abarca la columna actual.</li>
+          <li><strong>width:</strong> Ancho de la columna.</li>
+        </ul>
+        <h4>Ejemplo:</h4>
+        <pre>
+          <code class="code-container">
+           <span class="code-tag">
+             &lt;
+             <span class="code-name">blockquote</span>
+             &gt; 
+           </span>
+           <br>
+           <span class="code-tag">
+            &lt;
+            <span class="code-name">p</span>
+            &gt; La vida es lo que te sucede mientras estás ocupado haciendo otros planes.
+          </span>
+          <span class="code-tag">
+            &lt;/
+            <span class="code-name">p</span>
+            &gt;
+          </span>
+          <br>
+          <span class="code-tag">
+            &lt;
+            <span class="code-name">cite</span>
+            &gt; John Lennon
+          </span>
+          <span class="code-tag">
+            &lt;/
+            <span class="code-name">cite</span>
+            &gt;
+          </span>
+          <br>
+           <span class="code-tag">
+             &lt;/
+             <span class="code-name">blockquote</span>
+             &gt;
+           </span>
+          </code>
+        </pre>
+      </div>
+      <hr/>
+    </section>
+      </main>
     <footer>
-        <img src="img/imagenes/log_uptc_acred_pos.png" alt="Logo footer">
-        <p><i class="fa fa-copyright" aria-hidden="true">&copy; Copyright UPTC 2024</i></p>
+        <img class="logo_footer" src="img/images/log_uptc_acred_pos.png" alt="Logo footer">
+        <p class="copyright"><i class="fa fa-copyright" aria-hidden="true">&copy; Copyright UPTC 2024</i></p>
     </footer>
 </body>
 </html>

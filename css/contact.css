@@ -1,0 +1,89 @@
+
+#cont-title {
+    font-family: 'Arimo', sans-serif;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 40px;
+    text-align: center;
+}
+
+.contactenos {
+    position: relative;
+    background: #fff;
+    padding: 3em 0;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 2rem;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+    text-align: center;
+    box-shadow: 1rem 1rem 5rem black;
+}
+
+.contactenos label {
+    display: block;
+    float: center;
+}
+
+.contactenos input {
+    width: 80%;
+    height: 40px;
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e89906;
+    margin: 10px 0 20px;
+    padding: 0 10px;
+}
+
+.contactenos textarea {
+    width: 80%;
+    height: 150px;
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e89906;
+    margin: 10px 0 20px;
+    padding: 0 10px;
+}
+
+.contactenos p {
+    font-size: 18px;
+}
+
+input[type="submit"] {
+    width: 90%;
+    height: 50px;
+    border: 1px solid;
+    background: #e89906;
+    border-radius: 2rem;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+::-webkit-input-placeholder {
+    color: #11d821;
+} 
+   
+::-webkit-textarea-placeholder {
+    color: #0de818;
+}
+
+.contactenos input:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+
+.contactenos textarea:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}

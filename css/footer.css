@@ -1,0 +1,18 @@
+footer {
+    background-image: url(https://www.uptc.edu.co/sitio/export/sites/default/portal/.content/imagenes/footer_sitio1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: unset;
+    text-align: center;
+    padding: 5px;
+}
+
+.logo_footer {
+    width: 50%;
+    filter: invert(1.4);
+}
+
+.copyright {
+    color: #fff;
+    margin: 5px;
+}

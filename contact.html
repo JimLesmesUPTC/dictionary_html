@@ -1,65 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactenos - 📖 Manual HTML 2024 📖</title>
+    <link rel="shortcut icon" href="img/icons/icoUptc.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
+
 <body>
     <header>
-        <nav>
-            <div>
-                <div>
-                    <button>
-                        <!--Acá irá un botón del menú-->
-                    </button>
-                    <a href="/index.html"><img src="img/imagenes/Logo_UPTC.png" alt="Logo_UPTC"></a>
-                </div>
-            </div>
-            <div>
+        <div class="caja-enzabezado">
+            <a href="/index.html"><img class="logo" src="img/images/Logo_UPTC.png" alt="Logo_UPTC"></a>
+            <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li>
+                    <li class="dropdown">
                         <a href="tags.html">Etiquetas</a>
-                        <div>
+                        <div class="dropdown-content dropdown-content-1">
                             <a href="tags.html#a">a</a>
                             <a href="tags.html#b">b</a>
                             <a href="tags.html#c">c</a>
-                            <a href="tags.html#d">d</a>
-                            <a href="tags.html#e">e</a>
-                            <a href="tags.html#f">f</a>
-                            <a href="tags.html#g">g</a>
-                            <a href="tags.html#h">h</a>
-                            <a href="tags.html#i">i</a>
-                            <a href="tags.html#j">j</a>
-                            <a href="tags.html#k">k</a>
-                            <a href="tags.html#l">l</a>
-                            <a href="tags.html#m">m</a>
-                            <a href="tags.html#n">n</a>
-                            <a href="tags.html#o">o</a>
-                            <a href="tags.html#p">p</a>
-                            <a href="tags.html#q">q</a>
-                            <a href="tags.html#r">r</a>
-                            <a href="tags.html#s">s</a>
-                            <a href="tags.html#t">t</a>
-                            <a href="tags.html#u">u</a>
-                            <a href="tags.html#v">v</a>
-                            <a href="tags.html#w">w</a>
-                            <a href="tags.html#x">x</a>
-                            <a href="tags.html#y">y</a>
-                            <a href="tags.html#z">z</a>
                         </div>
                     </li>
                     <li><a href="contact.html">Contáctenos</a></li>
-                    <li><a href="about.html">A cerca de</a></li>
+                    <li class="dropdown">
+                        <a>Actividades</a>
+                        <div class="dropdown-content dropdown-content-2">
+                            <a href="buton.html">Botón</a>
+                            <a href="list.html">Lista</a>
+                            <a href="image.html">Imagen</a>
+                            <a href="pdfone.html">Certificado 1</a>
+                            <a href="pdftwo.html">Certificado 2</a>
+                        </div>
+                    </li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
-    <main></main>
+    <main>
+        <h2 id="cont-title">Contactenos</h2>
+        <section class="contactenos">
+            <form method="post">
+                <p>
+                    <label for="nombre" class="colocar_nombre">Nombre
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                        placeholder="Escribe tu nombre">
+                </p>
+                <p>
+                    <label for="email" class="colocar_email">Email
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio"
+                        placeholder="Escribe tu Email">
+                </p>
+
+                <p>
+                    <label for="telefone" class="colocar_telefono">Teléfono
+                    </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>
+                <p>
+                    <label for="asunto" class="colocar_asunto">Asunto
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+                        placeholder="Escribe un asunto">
+                </p>
+
+                <p>
+                    <label for="mensaje" class="colocar_mensaje">Mensaje
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+                        placeholder="Deja aquí tu comentario..."></textarea>
+                </p>
+                <input type="submit" value="Enviar">
+                <p class="aviso">
+                    <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>
+            </form>
+        </section>
+    </main>
     <footer>
-        <img src="img/imagenes/log_uptc_acred_pos.png" alt="Logo footer">
-        <p><i class="fa fa-copyright" aria-hidden="true">&copy; Copyright UPTC 2024</i></p>
+        <img class="logo_footer" src="img/images/log_uptc_acred_pos.png" alt="Logo footer">
+        <p class="copyright"><i class="fa fa-copyright" aria-hidden="true">&copy; Copyright UPTC 2024</i></p>
     </footer>
 </body>
+
 </html>
